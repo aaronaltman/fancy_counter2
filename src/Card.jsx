@@ -5,7 +5,7 @@ import CountButtonsEl from "./CountButtons";
 
 export default function CardEl() {
   return (
-    <div>
+    <div className="card">
       <TitleEl />
       <CountEl number={0} />
       <ResetButtonEl />

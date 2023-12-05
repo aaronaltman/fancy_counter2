@@ -1,8 +1,7 @@
-const CountEl = (props) => {
-  const { count } = props;
+const CountEl = ({ number }) => {
   return (
     <>
-      <h1>{count}</h1>
+      <h1>{number}</h1>
     </>
   );
 };
