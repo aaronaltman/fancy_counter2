@@ -1,7 +1,7 @@
 const CountEl = ({ number }) => {
   return (
     <>
-      <h1>{number}</h1>
+      <h1 class="count">{number}</h1>
     </>
   );
 };

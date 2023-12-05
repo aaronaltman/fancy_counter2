@@ -1,8 +1,8 @@
 const CountButtonsEl = () => {
   return (
-    <div>
-      <button>+</button>
-      <button>-</button>
+    <div className="button-container">
+      <button className="count-btn">+</button>
+      <button className="count-btn">-</button>
     </div>
   );
 };
