@@ -1,18 +1,7 @@
-import { useState } from "react";
-
-const CountEl = () => {
-  const [count, setCount] = useState(0);
-
+const CountEl = ({ count }) => {
   return (
     <>
-      <h1
-        onClick={() => {
-          setCount(count + 1);
-        }}
-        className="count"
-      >
-        {count}
-      </h1>
+      <h1 className="count">{count}</h1>
     </>
   );
 };
