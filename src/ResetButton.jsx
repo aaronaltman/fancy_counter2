@@ -1,10 +1,12 @@
 import { ResetIcon } from "@radix-ui/react-icons";
+//reset button resets the count back to "0"
 
-const ResetButtonEl = () => {
+export default function ResetButtonEl({ setReset }) {
   return (
-    <button className="reset--button">
-      <ResetIcon className="reset-btn-icon" />
-    </button>
+    <>
+      <button onClick={() => setReset(0)} className="reset-btn">
+        <ResetIcon className="reset-btn-icon" />
+      </button>
+    </>
   );
-};
-export default ResetButtonEl;
+}

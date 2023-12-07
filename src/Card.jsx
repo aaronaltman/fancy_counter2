@@ -6,11 +6,12 @@ import { useState } from "react";
 
 export default function CardEl() {
   const [count, setCount] = useState(0);
+
   return (
     <div className="card">
       <TitleEl />
       <CountEl count={count} />
-      <ResetButtonEl />
+      <ResetButtonEl setReset={setCount} />
       <CountButtonsEl setCount={setCount} />
     </div>
   );
