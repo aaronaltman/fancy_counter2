@@ -12,7 +12,7 @@ export default function CardEl() {
     if (count === 5) {
       alert("You've reached the limit on this thing");
     }
-  }, [count]);
+  }, []);
 
   return (
     <div className="card">
